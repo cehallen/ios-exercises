@@ -18,7 +18,7 @@
 
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
     /* WORK HERE */
-    // make a copy ((??) not sure if changing from propery from 'strong' to 'copy' is relevant here, but this works without it.  'copy' property assignment wouldn't matter in this case anyway, because the test occurs within the same instance...)
+    // make a copy (not sure if changing from propery from 'strong' to 'copy' is relevant here, but this works without it.  (A: 'copy' property assignment wouldn't matter in this case anyway, because the test occurs within the same instance... copy is more for when you have multiple instances and a mutable property, and you don't want that change class-wide for all instances.)
     self.arrayCopiedForLater = [arrayToCopy copy];
 }
 
