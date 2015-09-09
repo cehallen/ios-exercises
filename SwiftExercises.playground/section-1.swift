@@ -160,3 +160,32 @@ let sortedCereals = sorted(cerealArray, {(cereal1: String, cereal2: String) -> B
 //// shorter still
 //let sortedCereals = sorted(cerealArray, <)
 //println(sortedCereals)
+
+
+
+
+
+/* 
+Practice from Apple dev page on closures.
+Notice the bug-feature which requires 'as <type>' after at least one of the parameters, eg, '$0 as String, $1'.  Because XCode can't correctly infer type and the operator errors out
+*/
+
+//let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+
+//func backwards(s1: String, s2: String) -> Bool {
+//    return s1 > s2
+//}
+
+//var reversed = sorted(names, { (s1: String, s2: String) -> Bool in
+//    return s1 > s2
+//})
+
+//var reversed = sorted(names, { $0 as String > $1 } )
+//println(reversed)
+
+
+
+
+
+
+
